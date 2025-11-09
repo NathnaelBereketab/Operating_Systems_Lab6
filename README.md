@@ -13,7 +13,7 @@ This lab explores **Function Pointers in C** through two practical tasks:
 
 ---
 
-## 🧾 Task 1 — Process Sorting via Function Pointer
+## Task 1 — Process Sorting via Function Pointer
 
 ### Goal
 Implement a comparer function, `my_comparer()`, to sort an array of `Process` structs using `qsort()`.
