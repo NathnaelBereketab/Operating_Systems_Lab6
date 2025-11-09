@@ -27,7 +27,7 @@ Implement a comparer function, `my_comparer()`, to sort an array of `Process` st
 
 ### Run Instructions
 
-\`\`\`bash
+\`\`\`
 make
 ./task1/qsort task1/test-data/test1.csv
 \`\`\`
@@ -68,7 +68,7 @@ Create a calculator that performs different arithmetic operations based on user 
 
 ### Run Instructions
 
-\`\`\`bash
+\`\`\`
 ./task2/func_ptr
 \`\`\`
 
@@ -87,13 +87,13 @@ x = 18
 
 ### Build all executables:
 
-\`\`\`bash
+\`\`\`
 make
 \`\`\`
 
 ### Clean compiled binaries:
 
-\`\`\`bash
+\`\`\`
 make clean
 \`\`\`
 
