@@ -46,6 +46,8 @@ make
 
 Create a calculator that performs different arithmetic operations based on user input, without using any conditional statements.
 
+---
+
 ### Operations
 
 Input	Operation	Example Result
