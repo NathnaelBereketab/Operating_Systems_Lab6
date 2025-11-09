@@ -30,6 +30,8 @@ Implement a comparer function, `my_comparer()`, to sort an array of `Process` st
 make
 ./task1/qsort task1/test-data/test1.csv
 
+---
+
  Example Output
 2 (0, 4)
 7 (0, 14)
