@@ -27,10 +27,9 @@ Implement a comparer function, `my_comparer()`, to sort an array of `Process` st
 
 ### Run Instructions
 
-\`\`\`bash
+```bash
 make
 ./task1/qsort task1/test-data/test1.csv
-\`\`\`
 
 ### Example Output
 
