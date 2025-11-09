@@ -1,36 +1,82 @@
-### Getting started
-There are various things you can do to quickly and efficiently configure your Codio Box to your exact requirements. 
+# Operating Systems Lab 6 — Function Pointers
 
-### GUI Applications and the Virtual Desktop 
-The Virtual Desktop allows you auto develop GUI based applications using any programming language. You can install a Virtual Desktop in your Box. You can then start the desktop and view it within the Codio IDE or in a new browser tab.
+**Author:** Nathnael Bereketab  
 
-[Virtual Desktop documentation](https://codio.com/docs/ide/boxes/installsw/gui/)
+---
+
+## Overview
+
+This lab explores **Function Pointers in C** through two practical tasks:
+
+- **Task 1:** Implement a custom comparison function to sort process structures using `qsort()` and function pointers.  
+- **Task 2:** Build a simple calculator that performs mathematical operations using **function pointer arrays** instead of conditionals.
+
+---
+
+## 🧾 Task 1 — Process Sorting via Function Pointer
+
+### Goal
+Implement a comparer function, `my_comparer()`, to sort an array of `Process` structs using `qsort()`.
+
+### Sorting Rules
+1. Sort by **priority** in ascending order (lower number = higher priority).  
+2. If priorities are equal, sort by **arrival time** in ascending order.  
+3. If still equal, sort by **PID** in ascending order.  
+
+---
+
+### Run Instructions
+```bash
+make
+./task1/qsort task1/test-data/test1.csv
+
+ Example Output
+2 (0, 4)
+7 (0, 14)
+1 (1, 2)
+3 (1, 6)
+4 (2, 8)
+5 (3, 10)
+6 (3, 12)
+
+---
+
+## Task 2 — Function Pointer Calculator (No Conditionals)
+## Goal
+
+Create a calculator that performs different arithmetic operations based on user input, without using any conditional statements.
+
+### Operations
+
+Input	Operation	Example Result
+0	Add	x = 9
+1	Subtract	x = 3
+2	Multiply	x = 18
+3	Divide	x = 2
+4	Exit	Program terminates
+
+### Run Instructions
+./task2/func_ptr
+
+### Example Output
+Operand 'a': 6 | Operand 'b': 3
+Specify the operation to perform (0:add | 1:subtract | 2:multiply | 3:divide | 4:exit): 2
+Multiplying 'a' and 'b'
+x = 18
+
+## Compilation Commands
+
+### Build all executables:
+
+make
 
 
-### Command line access and the Terminal window
-All Codio Boxes provide sudo level privileges to the underlying Ubuntu server. This means you can install and configure any component you like. You access the terminal from the **Tools->Terminal** menu item.
+### Clean compiled binaries:
 
-### Debugger
-The Codio IDE comes with a powerful visual debugger. Currently we support Python, Java, C, C++ and NodeJS. Other languages can be added on request.
+make clean
 
-[Debugger documentation](https://codio.com/docs/ide/features/debugging/)
-
-
-### Content authoring and assessments
-Codio comes with a very powerful content authoring tool, Codio Guides. Guides is also where you create all forms of auto-graded assessments. 
-
-- [Guides documentation](https://codio.com/docs/content/authoring/overview/)
-- [Assessments documentation](https://codio.com/docs/content/authoring/assessments/)
-
-### Templating Box configurations and projects
-Codio offers two very powerful templating options so you can create new projects from those templates with just a couple of clicks. **Stacks** allow you to create snapshots of the Box’s underlying software configuration. You can then create new projects from a Stack avoiding having to configure anew each time you start a new project. **Starter Packs** allow you to template an entire project, including workspace code.
-
-- [Stacks documentation](https://codio.com/docs/project/stacks/)
-- [Starter Packs documentation](https://codio.com/docs/project/packs/)
-
-### Install software
-You can always install software onto your Box using the command line. However, Codio offers a shortcut for commonly installed components that can be accessed from the **Tools->Install Software** menu.
-
-We can easily add new items to the Install Software screen, so feel free to submit requests.
-
-[Install Software documentation](https://codio.com/docs/ide/boxes/installsw/box-parts/)
+## Author
+Nathnael Bereketab
+Sophomore Computer Science Major, Howard University
+Aspiring Software Engineer passionate about systems programming, web development, and technology that drives innovation and inclusion.
+GitHub: @NathnaelBereketab
