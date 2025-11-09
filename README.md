@@ -30,8 +30,6 @@ Implement a comparer function, `my_comparer()`, to sort an array of `Process` st
 make
 ./task1/qsort task1/test-data/test1.csv
 
----
-
  Example Output
 2 (0, 4)
 7 (0, 14)
@@ -43,8 +41,8 @@ make
 
 ---
 
-## Task 2 — Function Pointer Calculator (No Conditionals)
-## Goal
+# Task 2 — Function Pointer Calculator (No Conditionals)
+# Goal
 
 Create a calculator that performs different arithmetic operations based on user input, without using any conditional statements.
 
