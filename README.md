@@ -26,11 +26,15 @@ Implement a comparer function, `my_comparer()`, to sort an array of `Process` st
 ---
 
 ### Run Instructions
-```bash
+
+\`\`\`bash
 make
 ./task1/qsort task1/test-data/test1.csv
+\`\`\`
 
- Example Output
+### Example Output
+
+\`\`\`
 2 (0, 4)
 7 (0, 14)
 1 (1, 2)
@@ -38,11 +42,13 @@ make
 4 (2, 8)
 5 (3, 10)
 6 (3, 12)
+\`\`\`
 
 ---
 
-# Task 2 — Function Pointer Calculator (No Conditionals)
-# Goal
+## Task 2 — Function Pointer Calculator 
+
+### Goal
 
 Create a calculator that performs different arithmetic operations based on user input, without using any conditional statements.
 
@@ -50,35 +56,49 @@ Create a calculator that performs different arithmetic operations based on user 
 
 ### Operations
 
-Input	Operation	Example Result
-0	Add	x = 9
-1	Subtract	x = 3
-2	Multiply	x = 18
-3	Divide	x = 2
-4	Exit	Program terminates
+| Input | Operation | Example Result |
+|:------|:-----------|:---------------|
+| 0 | Add | x = 9 |
+| 1 | Subtract | x = 3 |
+| 2 | Multiply | x = 18 |
+| 3 | Divide | x = 2 |
+| 4 | Exit | Program terminates |
+
+---
 
 ### Run Instructions
+
+\`\`\`bash
 ./task2/func_ptr
+\`\`\`
 
 ### Example Output
+
+\`\`\`
 Operand 'a': 6 | Operand 'b': 3
 Specify the operation to perform (0:add | 1:subtract | 2:multiply | 3:divide | 4:exit): 2
 Multiplying 'a' and 'b'
 x = 18
+\`\`\`
+
+---
 
 ## Compilation Commands
 
 ### Build all executables:
 
+\`\`\`bash
 make
-
+\`\`\`
 
 ### Clean compiled binaries:
 
+\`\`\`bash
 make clean
+\`\`\`
+
+---
 
 ## Author
-Nathnael Bereketab
-Sophomore Computer Science Major, Howard University
-Aspiring Software Engineer passionate about systems programming, web development, and technology that drives innovation and inclusion.
-GitHub: @NathnaelBereketab
+
+**Nathnael Bereketab**  
